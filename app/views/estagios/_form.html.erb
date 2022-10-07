@@ -1,6 +1,6 @@
 <%= form_with(model: estagio) do |form| %>
   <% if estagio.errors.any? %>
-    <div style="color: red">
+    <div class="center" style="color: red">
       <h2><%= pluralize(estagio.errors.count, "error") %> prohibited this estagio from being saved:</h2>
 
       <ul>
@@ -11,22 +11,22 @@
     </div>
   <% end %>
 
-  <div>
+  <div class="center">
     <%= form.label :titulo, style: "display: block" %>
     <%= form.text_field :titulo %>
   </div>
 
-  <div>
+  <div class="center">
     <%= form.label :descricao, style: "display: block" %>
     <%= form.text_area :descricao %>
   </div>
 
-  <div>
+  <div class="center">
     <%= form.label :localidade, style: "display: block" %>
     <%= form.text_field :localidade %>
   </div>
 
-  <div>
-    <%= form.submit %>
+  <div class="center" style="margin-top: 15px; margin-bottom: 15px;">
+    <%= form.submit 'submit', class: 'button is-primary' %>
   </div>
 <% end %>
