@@ -7,11 +7,13 @@
 
 <div id="estagios">
   <% @estagios.each do |estagio| %>
-    <div class="card">
-      <%= render estagio %>
-      <div class="card-footer">
-        <div class="center" style="text-align: center">
-          <p><%= link_to "Show this estagio", estagio, style: 'display: block' %></p>
+    <div class="columns">
+      <div class="card column is-one-quarter">
+        <%= render estagio %>
+        <div class="card-footer">
+          <div class="center" style="text-align: center">
+            <p><%= link_to "Show this estagio", estagio, class: 'has-text-centered' %></p>
+          </div>
         </div>
       </div>
     </div>
