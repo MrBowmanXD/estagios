@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Estagios</h1>
+
+<div id="estagios">
+  <% @estagios.each do |estagio| %>
+    <%= render estagio %>
+    <p>
+      <%= link_to "Show this estagio", estagio %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New estagio", new_estagio_path %>

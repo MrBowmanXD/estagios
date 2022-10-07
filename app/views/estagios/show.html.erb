@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @estagio %>
+
+<div>
+  <%= link_to "Edit this estagio", edit_estagio_path(@estagio) %> |
+  <%= link_to "Back to estagios", estagios_path %>
+
+  <%= button_to "Destroy this estagio", @estagio, method: :delete %>
+</div>
